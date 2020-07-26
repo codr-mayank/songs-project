@@ -17,8 +17,8 @@ const SongDetail = ({ song }) => {
     );
 };
 
-const mapStateToPros = (state) => {
+const mapStateToProps = (state) => {
     return { song: state.selectedSong };
 };
 
-export default connect(mapStateToPros)(SongDetail);
+export default connect(mapStateToProps)(SongDetail);
